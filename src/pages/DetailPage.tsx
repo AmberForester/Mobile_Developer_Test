@@ -28,7 +28,7 @@ const DetailPage: React.FC = () => {
               <IonCardTitle>{data.title}</IonCardTitle>
             </IonCardHeader>
             <IonCardContent>
-              {/* <h3>Post by User {data.userId}</h3> */}
+              <h3>Diunggah oleh {data.userId}</h3> <br></br>
               <p>{data.body}</p>
             </IonCardContent>
           </IonCard>

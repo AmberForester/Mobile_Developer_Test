@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent, IonList, IonItem, IonCard, IonCardHeader, IonCardTitle, IonCardContent, IonButton, IonIcon } from '@ionic/react';
 import axios from 'axios';
-import { arrowForward } from 'ionicons/icons';
+import { arrowForward, listOutline } from 'ionicons/icons';
 
 interface Post {
   userId: number;
@@ -23,7 +23,10 @@ const ListPage: React.FC = () => {
     <IonPage>
       <IonHeader>
         <IonToolbar>
-          <IonTitle>List Data</IonTitle>
+          <IonTitle>
+            <IonIcon icon={listOutline} style={{ marginRight: '10px' }} />
+            List Data
+            </IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonContent>
@@ -56,6 +59,7 @@ const ListPage: React.FC = () => {
         ion-card {
           margin: 10px 0;
           border: 1px solid black;
+          border-radius: 5%;
           box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
         }
 

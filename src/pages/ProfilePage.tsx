@@ -1,12 +1,16 @@
 import React from 'react';
-import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent } from '@ionic/react';
+import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent, IonIcon } from '@ionic/react';
+import { personOutline } from 'ionicons/icons';
 
 const ProfilePage: React.FC = () => {
   return (
     <IonPage>
       <IonHeader>
         <IonToolbar>
-          <IonTitle>Profile</IonTitle>
+          <IonTitle>
+              <IonIcon icon={personOutline} style={{ marginRight: '10px' }} />
+            Profile
+            </IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonContent fullscreen>
@@ -52,7 +56,7 @@ const ProfilePage: React.FC = () => {
             </li>
           </ol>
 
-          <h3>Portfolio</h3>
+          <h3>Portofolio</h3>
           <p>
             <a href="https://github.com/AmberForester" target="_blank" rel="noopener noreferrer">github.com/AmberForester</a>
           </p>
