@@ -56,7 +56,7 @@ const ProfilePage: React.FC = () => {
             </li>
           </ol>
 
-          <h3>Portofolio</h3>
+          <h3>GitHub</h3>
           <p>
             <a href="https://github.com/AmberForester" target="_blank" rel="noopener noreferrer">github.com/AmberForester</a>
           </p>
